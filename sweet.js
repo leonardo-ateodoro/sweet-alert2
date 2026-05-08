@@ -17,5 +17,7 @@ document.getElementById('alertBasico').addEventListener('click', function() {
     document.getElementById('alertInfo').addEventListener('click', function() {
         Swal.fire('Informação', 'Este é um alerta de informação.','info');   
     });
+~~~~~
+
 
     
