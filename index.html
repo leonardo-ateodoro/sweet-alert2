@@ -27,129 +27,140 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-sucess" type="submit">Search</button>
-                </form>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <div class="container mt-5">
+        
+        <h1 class="text-center mb-4">Demonstração dos Alertas do SweetAlert2</h1>
+        
+        <div class="row">
+            <!-- Card 1: Alerta Básico -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">Alerta Básico</div>
+                    <div class="card-body text-center">
+                        <button id="alertBasico" class="btn btn-secondary">Exibir Alerta Básico</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Alerta de Sucesso -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">Alerta de Sucesso</div>
+                    <div class="card-body text-center">
+                        <button id="alertSucesso" class="btn btn-success">Exibir Sucesso</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: Alerta de Erro -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">Alerta de Erro</div>
+                    <div class="card-body text-center">
+                        <button id="alertErro" class="btn btn-danger">Exibir Erro</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4: Alerta de Aviso -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">Alerta de Aviso</div>
+                    <div class="card-body text-center">
+                        <button id="alertAviso" class="btn btn-warning">Exibir Aviso</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5: Alerta Informativo -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">Alerta Informativo</div>
+                    <div class="card-body text-center">
+                        <button id="alertInfo" class="btn btn-info">Exibir Informação</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6: Alerta de Confirmação -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">Alerta de Confirmação</div>
+                    <div class="card-body text-center">
+                        <button id="alertConfirm" class="btn btn-primary">Exibir Confirmação</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7: Alerta com Input -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">Alerta com Input</div>
+                    <div class="card-body text-center">
+                        <button id="alertInput" class="btn btn-dark">Exibir Prompt</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8: Alerta com Timer -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">Alerta com Timer</div>
+                    <div class="card-body text-center">
+                        <button id="alertTimer" class="btn btn-outline-primary">Exibir com Timer</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 9: Alerta com Timer e Contagem Regressiva -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">Alerta com Timer e Contagem Regressiva</div>
+                    <div class="card-body text-center">
+                        <button id="alertTimerCount" class="btn btn-outline-primary">Exibir Timer com Contagem Regressiva</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 10: Alerta com HTML Customizado -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">Alerta com HTML</div>
+                    <div class="card-body text-center">
+                        <button id="alertHtml" class="btn btn-outline-secondary">Exibir HTML</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-        <div class="container mt-5">
-            <h1 class="text-center mb-4">Desmontração dos Alertas do SweetAlert2</h1>
-
-            <div class="row">
-                <div class="col-md4 mb-3">
-                    <div class="card">
-                        <div class="card-header">Alerta Básico</div>
-                        <div class="card-body text-center">
-                            <button id="alertBasico" class="btn btn-secondary">Exibir Alerta Básico</button>
-                        </div>
-                    </div>
-                </div>
-                <div class= "col-md-4 mb-3">
-                    <div class="card">
-                        <div class="card-header">Alerta de Sucesso</div>
-                        <div class="card-body text-center">
-                            <button id="alertSucesso" class="btn btn-sucess">Exibir Sucesso</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <div class="card-header">Alerta de Erro</div>
-                        <div class="card-body text-center">
-                            <button id="alertBasico" class="btn btn-danger">Exibir Erro</button>
-                        </div>
-                   </div>
-                </div >
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <div class="card-header">Alerta de Aviso</div>
-                        <div class="card-body text-center">
-                            <button id="alertAviso" class="btn btn-warning">Exibir Aviso</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <div class="card-header">Alerta Informativo</div>
-                        <div class="card-body text-center">
-                            <button id="alertInfo" class="btn btn-info" >Exibir Informação</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <div class="card-header"> Alerta de Confirmação</div>
-                        <div class="card-body text-center">
-                            <button id="alertConfirm" class="btn btn-primary">Exibir Confirmação</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <div class="card">
-                            <div class="card-header">Alerta com Input</div>
-                            <div class="card-body text-center">
-                                <button id="alertInput" class="btn btn-dark">Exibir Prompt</button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    
-                 <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <div class="card-header">Alerta com Timer</div>
-                        <div class="card-body text-center">
-                            <button id="alertTimer" class="btn btn-outline-primary">Exibir com Timer</button>
-                        </div>
-                    </div>
-                 </div>
-                 
-                 
-                 d
-                
-
-                
-                    
-
-               
-
+    
     </div>
-</div>
+
 </body>
+
 </html>
